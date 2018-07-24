@@ -37,7 +37,7 @@ def turn(board)
   puts "Please enter 1-9:"
   location = input_to_index(gets.strip)
   if valid_move?(board, location) == true
-    
+    move(board, location, value="X")
       turn(board)
       count += 1 
     end
