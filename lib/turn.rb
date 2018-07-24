@@ -37,7 +37,9 @@ def turn(board)
   puts "Please enter 1-9:"
   location = input_to_index(location)
   count = 0
-  if valid_move?(board, location) == false
-    turn(board)
+  until count == 1
+    if valid_move?(board, location) == false
+      turn(board)
+      count += 1 
   end 
 end
