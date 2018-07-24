@@ -38,6 +38,7 @@ def turn(board)
   location = input_to_index(gets.strip)
   if valid_move?(board, location) == true
     move(board, location, value="X")
+    display_board(board)
   else
     turn(board)
   end 
