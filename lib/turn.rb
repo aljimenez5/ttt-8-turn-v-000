@@ -41,5 +41,6 @@ def turn(board)
     if valid_move?(board, location) == false
       turn(board)
       count += 1 
+    end
   end 
 end
